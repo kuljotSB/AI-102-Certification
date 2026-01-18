@@ -1,0 +1,51 @@
+productID,productName,price,colour
+P001,Printer,172.15,Green
+P002,Motherboard,249.52,White
+P003,Keyboard,440.52,Blue
+P004,Graphics Card,152.8,Red
+P005,Smartwatch,121.0,Pink
+P006,Desktop,1887.18,Red
+P007,Headphones,212.44,Blue
+P008,Smartphone,76.65,Purple
+P009,Laptop,1002.33,Blue
+P010,Gaming Console,267.88,Black
+P011,Camera,103.09,Pink
+P012,Smartphone,67.53,Gray
+P013,Mouse,237.01,Blue
+P014,Smartphone,88.15,Gold
+P015,Desktop,1305.33,Pink
+P016,Headphones,89.4,Black
+P017,Tablet,130.39,Gray
+P018,Desktop,814.46,Red
+P019,Camera,251.79,Red
+P020,Gaming Console,227.1,Gold
+P021,Printer,278.13,White
+P022,Headphones,176.6,Silver
+P023,Monitor,117.3,White
+P024,External Hard Drive,185.61,Green
+P025,Laptop,761.82,Black
+P026,Monitor,316.39,Black
+P027,Smartphone,84.61,Silver
+P028,External Hard Drive,144.48,Red
+P029,Smartphone,115.54,Pink
+P030,USB Drive,207.63,Blue
+P031,Speaker,212.22,Silver
+P032,External Hard Drive,276.94,Pink
+P033,Camera,53.93,Purple
+P034,Gaming Console,221.98,Black
+P035,Webcam,153.19,Green
+P036,Monitor,339.12,White
+P037,Headphones,148.1,Red
+P038,Webcam,96.72,Blue
+P039,Laptop,917.98,Green
+P040,Speaker,193.79,Purple
+P041,Tablet,117.98,Gold
+P042,Graphics Card,76.61,Black
+P043,Smartphone,70.85,White
+P044,Laptop,1692.79,Black
+P045,Keyboard,139.94,Pink
+P046,Keyboard,310.2,Gold
+P047,Webcam,244.02,White
+P048,Motherboard,140.2,Red
+P049,Mouse,435.9,Silver
+P050,Headphones,123.97,Silver
