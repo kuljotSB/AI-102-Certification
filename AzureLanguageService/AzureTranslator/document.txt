@@ -1,0 +1,23 @@
+Invoice Number: INV-2024-001
+Date: 2024-06-10
+
+Bill To:
+John Doe
+123 Main Street
+Cityville, ST 12345
+
+Description                Quantity    Unit Price    Total
+-----------------------------------------------------------
+Web Design Services             1        $1,000.00   $1,000.00
+Hosting (12 months)             1          $120.00     $120.00
+Domain Registration (.com)      1          $15.00      $15.00
+
+-----------------------------------------------------------
+Subtotal:                                   $1,135.00
+Tax (10%):                                   $113.50
+-----------------------------------------------------------
+Total Due:                                 $1,248.50
+
+Payment Terms: Due within 30 days
+
+Thank you for your business!
