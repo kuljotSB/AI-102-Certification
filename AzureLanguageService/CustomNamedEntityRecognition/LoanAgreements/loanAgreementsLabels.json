@@ -3,9 +3,9 @@
     "stringIndexType": "Utf16CodeUnit",
     "metadata": {
       "projectName": "LoanAgreement",
-      "storageInputContainerName": "example-data",
+      "storageInputContainerName": "ner-dataset",
       "projectKind": "CustomEntityRecognition",
-      "description": "Trying out custom named entity recognition",
+      "description": "",
       "language": "en",
       "multilingual": false,
       "settings": {}
