@@ -1,0 +1,122 @@
+{
+  "@odata.etag": "\"0x8DDFA3AC4B83B65\"",
+  "name": "multi-modal-rag-index",
+  "fields": [
+    {
+      "name": "content_id",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": false,
+      "key": true,
+      "analyzer": "keyword",
+      "synonymMaps": []
+    },
+    {
+      "name": "document_title",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "content_text",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "content_embedding",
+      "type": "Collection(Edm.Single)",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "dimensions": 1536,
+      "vectorSearchProfile": "multi-modal-rag-aiFoundryCatalog-text-profile",
+      "synonymMaps": []
+    }
+  ],
+  "scoringProfiles": [],
+  "suggesters": [],
+  "analyzers": [],
+  "normalizers": [],
+  "tokenizers": [],
+  "tokenFilters": [],
+  "charFilters": [],
+  "similarity": {
+    "@odata.type": "#Microsoft.Azure.Search.BM25Similarity"
+  },
+  "semantic": {
+    "defaultConfiguration": "multi-modal-rag-semantic-configuration",
+    "configurations": [
+      {
+        "name": "multi-modal-rag-semantic-configuration",
+        "flightingOptIn": false,
+        "rankingOrder": "BoostedRerankerScore",
+        "prioritizedFields": {
+          "titleField": {
+            "fieldName": "document_title"
+          },
+          "prioritizedContentFields": [
+            {
+              "fieldName": "content_text"
+            }
+          ],
+          "prioritizedKeywordsFields": []
+        }
+      }
+    ]
+  },
+  "vectorSearch": {
+    "algorithms": [
+      {
+        "name": "multi-modal-rag-algorithm",
+        "kind": "hnsw",
+        "hnswParameters": {
+          "metric": "cosine",
+          "m": 4,
+          "efConstruction": 400,
+          "efSearch": 500
+        }
+      }
+    ],
+    "profiles": [
+      {
+        "name": "multi-modal-rag-aiFoundryCatalog-text-profile",
+        "algorithm": "multi-modal-rag-algorithm",
+        "vectorizer": "multi-modal-rag-aiFoundryCatalog-text-vectorizer"
+      }
+    ],
+    "vectorizers": [
+      {
+        "name": "multi-modal-rag-aiFoundryCatalog-text-vectorizer",
+        "kind": "azureOpenAI",
+        "azureOpenAIParameters": {
+          "resourceUri": "<ENTER_AZURE_OPENAI_ENDPOINT example - https://azureopenairename.openai.azure.com>",
+          "deploymentId": "ENTER YOUR EMBEDDING MODEL DEPLOYMENT NAME (should be of type text-embedding-ada-002)",
+          "apiKey": "<ENTER_YOUR_API_KEY>",
+          "modelName": "text-embedding-ada-002"
+        }
+      }
+    ],
+    "compressions": []
+  }
+}
