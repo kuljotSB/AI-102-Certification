@@ -1,0 +1,122 @@
+[
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "Can you tell me the weather forecast for Mumbai today?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 41,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "What's the weather like in New York this weekend?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 27,
+        "length": 8
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "Could you provide the weather update for San Francisco tomorrow?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 41,
+        "length": 13
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "What's the temperature in London right now?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 26,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "Can you give me the weather conditions for Tokyo on Friday?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 43,
+        "length": 5
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "How's the weather in Paris this evening?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 21,
+        "length": 5
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "What's the forecast for Berlin this week?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 24,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "Let me know the weather in Sydney this afternoon.",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 27,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "How's the weather looking in Toronto this weekend?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 29,
+        "length": 7
+      }
+    ]
+  },
+  {
+    "intent": "getWeather",
+    "language": "en-us",
+    "text": "What's the weather update for Dubai tomorrow morning?",
+    "entities": [
+      {
+        "category": "location",
+        "offset": 30,
+        "length": 5
+      }
+    ]
+  }
+]
